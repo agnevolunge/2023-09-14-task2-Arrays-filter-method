@@ -502,13 +502,66 @@ let filteredElements70 = originalElements.filter(function(element) {
     return typeof element === 'string' && element.slice(0, 1).includes('o')
 })
 console.log(filteredElements70)
+
 // 3.70. Gauti tik tekstus (string), kurie baigiasi raide d.
+let filteredElements701 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.slice(-1).includes('d')
+})
+console.log(filteredElements701)
+
 // 3.71. Gauti tik tekstus (string), kurie baigiasi raide s.
+let filteredElements71 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.slice(-1).includes('s')
+})
+console.log(filteredElements71)
+
 // 3.72. Gauti tik tekstus (string), kurie turi daugiau nei 4 simbolius ir turi raidę o.
+let filteredElements72 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.length > 4 && element.includes('o')
+})
+console.log(filteredElements72)
+
 // 3.73. Gauti tik tekstus (string), kurie turi daugiau arba lygiai 5 simbolius ir turi raidę a.
+let filteredElements73 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.length >= 5 && element.includes('a')
+})
+console.log(filteredElements73)
+
 // 3.74. Gauti tik tekstus (string), kurie turi porinį simbolių skaičių.
+let filteredElements74 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.length % 2 === 0
+})
+console.log(filteredElements74)
+
 // 3.75. Gauti tik tekstus (string), kurie turi neporinį simbolių skaičių ir turi raidę s.
+let filteredElements75 = originalElements.filter(function(element) {
+    return typeof element === 'string' && (!element.length % 2 === 0 && element.includes('s'))
+})
+console.log(filteredElements75)
+
 // 3.76. Gauti tik tekstus (string), kurių trečias simbolis yra a.
+let filteredElements76 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.slice(2, 3).includes('a')
+})
+console.log(filteredElements76)
+
 // 3.77. Gauti tik tekstus (string), kurių ketvirtas simbolis yra l.
+let filteredElements77 = originalElements.filter(function(element) {
+   
+    return typeof element === 'string' && element.slice(3, 4).includes('l')
+})
+console.log(filteredElements77)
+
 // 3.78. Gauti tik tekstus (string), kurių penktas simbolis nėra t ir kurie turi daugiau simbolių nei 4.
+let filteredElements78 = originalElements.filter(function(element) {
+   
+    return typeof element === "string" && !element.slice(4, 5).includes("t") && element.length > 4
+})
+console.log(filteredElements78)
+
 // 3.79. Gauti tik tekstus (string), kurių pirmas simbolis nėra e, kurie turi mažiau simbolių nei 6 ir kurie neprasideda skaičiumi.
+let filteredElements79 = originalElements.filter(function(element) {
+   
+    return typeof element === "string" && element.length < 6 && (!element.slice(0, 1).includes("e") && isNaN(element.slice(0, 1)))
+})
+console.log(filteredElements79)
