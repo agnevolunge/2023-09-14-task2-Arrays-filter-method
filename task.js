@@ -295,16 +295,82 @@ let filteredElements40 = originalElements.filter(function(element) {
 console.log(filteredElements40)
 
 // 3.41. Gauti tik skaičius, kurie yra didesni už 1000 ir kurie dalinasi iš 3.
+
+let filteredElements41 = originalElements.filter(function(element) {
+    return element > 1000  && element % 3 === 0
+})
+console.log(filteredElements41)
+
 // 3.42. Gauti tik skaičius, kurie yra mažesni už 1000 ir kurie dalinasi iš 9.
+
+let filteredElements42 = originalElements.filter(function(element) {
+    return element < 1000  && element % 9 === 0
+})
+console.log(filteredElements42)
+
 // 3.43. Gauti tik skaičius, kurie yra mažesni už 500 ir kurie dalinasi iš 2.
+
+let filteredElements43 = originalElements.filter(function(element) {
+    return element < 500  && element % 2 === 0
+})
+console.log(filteredElements43)
+
 // 3.44. Gauti tik skaičius, kurie yra didesni arba lygūs 33 ir kurie dalinasi iš 3.
+
+let filteredElements44 = originalElements.filter(function(element) {
+    return element >= 33  && element % 3 === 0
+})
+console.log(filteredElements44)
+
 // 3.45. Gauti tik skaičius, kurie yra didesni arba lygūs 444 ir kurie dalinasi iš 12.
+
+let filteredElements45 = originalElements.filter(function(element) {
+    return element >= 444  && element % 12 === 0
+})
+console.log(filteredElements45)
+
 // 3.46. Gauti tik skaičius, kurie yra mažesni arba lygūs 155 ir kurie dalinasi iš 5.
+
+let filteredElements46 = originalElements.filter(function(element) {
+    return element <= 155  && element % 5 === 0
+})
+console.log(filteredElements46)
+
 // 3.47. Gauti tik skaičius, kurie yra mažesni arba lygūs -333 ir kurie dalinasi iš 9.
+
+let filteredElements47 = originalElements.filter(function(element) {
+    return element <= -333  && element % 9 === 0
+})
+console.log(filteredElements47)
+
 // 3.48. Gauti tik skaičius, kurie yra didesni už 100, mažesni už 500 ir kurie dalinasi iš 5.
+
+let filteredElements48 = originalElements.filter(function(element) {
+    return element > 100 && element < 500  && element % 5 === 0
+})
+console.log(filteredElements48)
+
 // 3.49. Gauti tik skaičius, kurie yra didesni arba lygūs 888, mažesni už 1000 ir kurie dalinasi iš 2.
+
+let filteredElements49 = originalElements.filter(function(element) {
+    return element >= 888 && element < 1000  && element % 2 === 0
+})
+console.log(filteredElements49)
+
 // 3.50. Gauti tik skaičius, kurie yra mažesni arba lygūs 888, didesni arba lygūs -333, dalinasi iš 3 ir nėra nulis.
+
+let filteredElements50 = originalElements.filter(function(element) {
+    return element <= 888 && element >= -333  && element % 3 === 0 && element !== 0
+})
+console.log(filteredElements50)
+
 // 3.51. Gauti tik skaičius.
+
+let filteredElements51 = originalElements.filter(function(element) {
+    
+})
+console.log(filteredElements51)
+
 // 3.52. Gauti tik tekstus (string).
 // 3.53. Gauti tik tekstus (string), kurie turi daugiau nei 5 simbolius.
 // 3.54. Gauti tik tekstus (string), kurie turi mažiau arba lygiai 5 simbolius.
