@@ -367,29 +367,141 @@ console.log(filteredElements50)
 // 3.51. Gauti tik skaičius.
 
 let filteredElements51 = originalElements.filter(function(element) {
-    
+    return typeof element === 'number'
 })
 console.log(filteredElements51)
 
 // 3.52. Gauti tik tekstus (string).
+
+let filteredElements52 = originalElements.filter(function(element) {
+    return typeof element === 'string'
+})
+console.log(filteredElements52)
+
 // 3.53. Gauti tik tekstus (string), kurie turi daugiau nei 5 simbolius.
+let filteredElements53 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.length > 5
+})
+console.log(filteredElements53)
+
 // 3.54. Gauti tik tekstus (string), kurie turi mažiau arba lygiai 5 simbolius.
+
+let filteredElements54 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.length <= 5
+})
+console.log(filteredElements54)
+
 // 3.55. Gauti tik tekstus (string), kurie turi mažiau nei 7 simbolius.
+
+let filteredElements55 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.length < 7
+})
+console.log(filteredElements55)
+
 // 3.56. Gauti tik tekstus (string), kurie turi raidę t.
+
+let filteredElements56 = originalElements.filter(function(element) {
+    // return typeof element === 'string' && element.charAt() === 't'
+    return typeof element === 'string' && element.includes('t')
+})
+console.log(filteredElements56)
+
 // 3.57. Gauti tik tekstus (string), kurie turi raidę y.
+
+let filteredElements57 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.includes('y')
+})
+console.log(filteredElements57)
+
 // 3.58. Gauti tik tekstus (string), kurie turi raides e arba a.
+
+let filteredElements58 = originalElements.filter(function(element) {
+    return typeof element === 'string' && (element.includes('e') || element.includes('a'))
+})
+console.log(filteredElements58)
+
 // 3.59. Gauti tik tekstus (string), kurie turi raides t ir i.
+
+let filteredElements59 = originalElements.filter(function(element) {
+    return typeof element === 'string' && (element.includes('t') && element.includes('i'))
+})
+console.log(filteredElements59)
+
 // 3.60. Gauti tik tekstus (string), kurie turi raide t, bet neturi raidės k.
+
+let filteredElements60 = originalElements.filter(function(element) {
+    return typeof element === 'string' && (element.includes('t') && !element.includes('k'))
+})
+console.log(filteredElements60)
+
 // 3.61. Gauti tik tekstus (string), kurie turi raide a, bet neturi raidės s.
+
+let filteredElements61 = originalElements.filter(function(element) {
+    return typeof element === 'string' && (element.includes('a') && !element.includes('s'))
+})
+console.log(filteredElements61)
+
 // 3.62. Gauti tik tekstus (string), kurie turi daugiau nei vieną raidę t.
+
+let filteredElements62 = originalElements.filter(function(element) {
+    // return typeof element === 'string' && (element.includes('t') > 1)
+    return typeof element === 'string' && element.split('t').length > 2
+})
+console.log(filteredElements62)
+
 // 3.63. Gauti tik tekstus (string), kurie turi raidžių junginį st.
+let filteredElements63 = originalElements.filter(function(element) {
+    return typeof element === 'string' && (element.includes('st'))
+})
+console.log(filteredElements63)
+
 // 3.64. Gauti tik tekstus (string), kurie turi raidžių junginį nd.
+
+let filteredElements64 = originalElements.filter(function(element) {
+    return typeof element === 'string' && (element.includes('nd'))
+})
+console.log(filteredElements64)
+
 // 3.65. Gauti tik tekstus (string), kurie neturi raidės s.
+
+let filteredElements65 = originalElements.filter(function(element) {
+    return typeof element === 'string' && !element.includes('s')
+})
+console.log(filteredElements65)
+
 // 3.66. Gauti tik tekstus (string), kurie neturi raidės t.
+
+let filteredElements66 = originalElements.filter(function(element) {
+    return typeof element === 'string' && !element.includes('t')
+})
+console.log(filteredElements66)
+
 // 3.67. Gauti tik tekstus (string), kurie neturi raidės r ir l.
+
+let filteredElements67 = originalElements.filter(function(element) {
+    return typeof element === 'string' && (!element.includes('r') && !element.includes('l'))
+})
+console.log(filteredElements67)
+
 // 3.68. Gauti tik tekstus (string), kurie prasideda skaičiumi.
+
+let filteredElements68 = originalElements.filter(function(element) {
+    return typeof element === 'string' && !isNaN(element.slice(0, 1))
+})
+console.log(filteredElements68)
+
 // 3.69. Gauti tik tekstus (string), kurie prasideda raide s.
+
+let filteredElements69 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.slice(0, 1).includes('s')
+})
+console.log(filteredElements69)
+
 // 3.70. Gauti tik tekstus (string), kurie prasideda raide o.
+let filteredElements70 = originalElements.filter(function(element) {
+    return typeof element === 'string' && element.slice(0, 1).includes('o')
+})
+console.log(filteredElements70)
 // 3.70. Gauti tik tekstus (string), kurie baigiasi raide d.
 // 3.71. Gauti tik tekstus (string), kurie baigiasi raide s.
 // 3.72. Gauti tik tekstus (string), kurie turi daugiau nei 4 simbolius ir turi raidę o.
