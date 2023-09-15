@@ -444,8 +444,12 @@ console.log(filteredElements61)
 // 3.62. Gauti tik tekstus (string), kurie turi daugiau nei vieną raidę t.
 
 let filteredElements62 = originalElements.filter(function(element) {
-    // return typeof element === 'string' && (element.includes('t') > 1)
-    return typeof element === 'string' && element.split('t').length > 2
+    
+    //split metodas suskaido stringa pagal pateikta reiksme. jeigu pateikiami tusti skliaustai, tai stringa suskaido raidemis.
+    // return typeof element === 'string' && element.split('t').length > 2
+
+    //ANTRAS VARIANTAS
+
 })
 console.log(filteredElements62)
 
